@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Lalezar;
+    src: url('../font/Lalezar-Regular.ttf')
+}
+@font-face {
+    font-family: 'IranSans';
+    src: url('../font/IranianSans.ttf')
+}
+
+*{
+    font-family:'IranSans' ;
+}
+
+h1{
+    font-family: Lalezar !important;
+}
+
+main{
+    margin: 10px;
+    background-color: white;
+    padding:15px;
+    border-radius: 20px;
+}
+
+body{
+  
+    background-color: rgb(235, 233, 233);
+}
+
+#customiseForm{
+    display: none;
+}
+
+#map {
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.loading-background{
+    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: 12;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    
+}
+.loading-title{
+    opacity: 100%;
+    position: absolute;
+    left:45%;
+    top:45%;
+    color: rgb(255, 255, 255);
+    font-family:  Lalezar !important;
+}
+#loading{
+    opacity: 100%;
+    position: absolute;
+    left:45%;
+    top:30%;
+    width:100px;
+    z-index: 10;
+}
+
+.my-custom-pin{
+    margin:-10px !important ;
+    padding: 0px !important;
+}
+
+.defaultStopMove,.defaultStartMove,.defaultRestartMove,.defaultContinueMove,.customeStartMove{
+    display: none;
+}
+
+input{
+    padding: 5px;
+    height: 40px;
+    border: 0.5px solid  rgb(206, 206, 206);;
+    border-radius:7px;
+ 
+}
+
+.main{
+    width:800px;
+    height: 90vh;
+   
+}
+
+
+@media screen and (max-width:1000px) {
+    .main{
+        width:650px;      
+    }
+}   
+
+@media screen and (max-width:460px) {
+    .main{
+        width:300px;     
+    }
+    
+    #map{
+        width:200px;
+        height:50vh;    
+    }
+    .mainButtons{
+        flex-direction: column-reverse !important;
+    }
+}   
+
